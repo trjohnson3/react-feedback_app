@@ -1,6 +1,7 @@
 
 
-function Header({ text, bgColor, textColor }) {
+function Header({ text='Feedback UI', bgColor='rgba(0,0,0,0.4)', 
+    textColor='#ff6895' }) {
     const headerStyles = {
         backgroundColor: bgColor,
         color: textColor
@@ -14,11 +15,5 @@ function Header({ text, bgColor, textColor }) {
         </header>
     );
 }
-
-Header.defaultProps = {
-    text: 'Feedback UI',
-    bgColor: 'rgba(0,0,0,0.4)',
-    textColor: '#ff6895'
-};
 
 export default Header;
